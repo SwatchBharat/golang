@@ -20,11 +20,6 @@ func getPort() string {
 
 func APIHandler(w http.ResponseWriter, r *http.Request) {
 
-	if r.Method == "POST" {
-		http.Error(w, "Method is not supported.", http.StatusNotFound)
-		return
-	}
-
 	fmt.Fprintf(w, "Hello Goper")
 
 }
